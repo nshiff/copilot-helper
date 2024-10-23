@@ -2,3 +2,14 @@ body {
   padding: 8px;
   font-family: sans-serif;
 }
+
+.notes {
+  display: flex;
+  justify-content: space-between;
+}
+
+.note {
+  border: 1px solid gray;
+  padding: 12px;
+  border-radius: 8px;
+}
