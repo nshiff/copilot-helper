@@ -1,15 +1,39 @@
-body {
-  padding: 8px;
-  font-family: sans-serif;
-}
-
-.notes {
+.kanban-board {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around; /* Or space-between, space-evenly */
+  padding: 20px;
 }
 
-.note {
-  border: 1px solid gray;
-  padding: 12px;
-  border-radius: 8px;
+.kanban-column {
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 250px; /* Adjust as needed */
+  border-radius: 5px;
+}
+
+.kanban-column h3 {
+  margin-bottom: 10px;
+}
+
+.kanban-task {
+  background-color: #f0f0f0;
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  cursor: grab; /* Indicate draggable */
+  border: 1px solid #ddd;
+}
+
+.kanban-task:hover {
+  background-color: #e0e0e0;
+}
+
+.kanban-task:active {
+  cursor: grabbing; /* Indicate dragging */
+}
+
+/* Optional: Style the dragging element */
+.kanban-task.dragging {
+  opacity: 0.7; /* Make it slightly transparent */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
 }
