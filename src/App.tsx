@@ -1,7 +1,9 @@
+import SnakeGame from "./components/SnakeGame";
+
 // App is a high-level component in the solution
-// App displays "hello" to the user
+// It is used as a jumping-off point for different experiments
 const App = () => {
-  return <div>hello</div>;
+  return <SnakeGame />;
 };
 
 export default App;
